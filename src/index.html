@@ -5,30 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1>Destinos turisticos em Aracati</h1>
+<body bgcolor="#121212">
+    <h1 align="center"><font color="#FFFFFF" face="Verdana">Destinos turisticos em Aracati</font></h1>
     <hr>
-    <div>
-        <h2>Canoa Quebrada</h2>
-        <p>Canoa Quebrada é uma praia localizada no litoral leste<br>
-            do Estado do Ceará, Distante 163 km de Fortaleza e<br>
-            12 km da sede do município de Aracati.</p>
-        <img src="assets/canoa-quebrada-ceara.jpg" alt="Foto de Canoa Quebrada">
-    </div>
-    <div>
-        <h2>Majorlândia</h2>
-        <p>Localizado a 14 km da sede do município, é uma localidade<br>
-            rural e praieira, cercado por mangues, dunas, lagoas e um<br>
-            braço do Rio Jaguaribe, onde há uma camboa.</p>
-        <img src="assets/Majorlandia-1140x570-1.jpeg" alt="Foto de Majorlândia">
-    </div>
-    <div>
-        <h2>Quixaba</h2>
-        <p>A praia de Quixaba fica localizada no município de Aracati-CE<br>
-            a cerca de 15km do centro da cidade. Divide as atenções no município<br>
-            com as praias de Canoa Quebrada e Majorlândia.</p>
-        <img src="assets/Quixaba.jpeg" alt="Quixaba">
-    </div>
+    <table width="100%">
+        <!-- montando o layout usando tablas tr = row; th = cabeçalho de uma coluna. Deixei uma margem a esquerda e a direita de 10% da tela, isso tá funcionando como se fosse uma tabela-->
+        <tr>
+            <!-- margem esquerda -->
+            <th width="10%"></th>
+            <!-- centro -->
+            <th></th>
+            <!-- margem direita -->
+            <th width="10%"></th>
+        </tr>
+
+        <!-- preenchendo a tabela tr = row e td são celulas, preenchendo a tabela da esquerda pra direita -->
+        <tr>
+            <!-- margem esquerda -->
+            <td width="10%"></td>
+
+            <td>
+                <!-- aqui na celula central eu crio outra tabela com duas celulas uma pra imagem e descrição e uma pro mapa iframe, só assim eu consigo alinhar horizontalmente -->
+                <table background="../assets/canoa.jpg"  width="100%">
+                    <!-- imagem e descrição -->
+                    <td width="50%">
+                        <div align="center" height="400">
+                            <h2><font color="#FFFFFF" face="Georgia">Canoa Quebrada</font></h2>
+                            <p><font color="#FFFFFF" face="Verdana">Canoa Quebrada é uma praia localizada no litoral leste<br>
+                            do Estado do Ceará, Distante 163 km de Fortaleza e<br>
+                            12 km da sede do município de Aracati.</font></p>
+                            
+                        </div>
+                    </td>
+                    <!-- mapa -->
+                    <td width="50%">
+                        <div></div>
+                        <iframe title="Mapa de Canoa Quebrada" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7954.760339439102!2d-37.70868043827636!3d-4.525346786293515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b84b3b26eac955%3A0xadd5f8faff3b42b7!2sCanoa%20Quebrada%20-%20Aracati%2C%20CE!5e0!3m2!1spt-BR!2sbr!4v1754713669064!5m2!1spt-BR!2sbr" width="70%" height="300" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </td>
+                </table>
+            </td>
+
+            <!-- margem direita -->
+            <td width="10%"></td>
+        </tr>
+
+
+        <tr>
+            <!-- Majorlandia, aqui é só manter preenchendo a tabela criando 3 tds margem esquerda 10% / centro table / margem direita 10% -->
+             <td width="10%"></td>
+
+            <td>
+                <!-- aqui na celula central eu crio outra tabela com duas celulas uma pra imagem e descrição e uma pro mapa iframe, só assim eu consigo alinhar horizontalmente -->
+                <table background="../assets/majorlandia.jpg" width="100%">
+                    <!-- imagem e descrição -->
+                    <td width="50%">
+                        <div align="center" height="400">
+                            <h2><font color="#FFFFFF" face="Georgia">Majorlândia</font></h2>
+                            <p><font color="#FFFFFF" face="Verdana">Localizado a 14 km da sede do município, é uma localidade<br>
+                            rural e praieira, cercado por mangues, dunas, lagoas e um<br>
+                            braço do Rio Jaguaribe, onde há uma camboa.</font></p>
+                        </div>
+                    </td>
+                    <!-- mapa -->
+                    <td width="50%">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11249.25817615336!2d-37.680023135853624!3d-4.5556048528994575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9b5225c7354b1%3A0x472603e34f080aa7!2sMajorl%C3%A2ndia%20-%20Aracati%2C%20CE!5e0!3m2!1spt-BR!2sbr!4v1754713840547!5m2!1spt-BR!2sbr" width="70%" height="300" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </td>
+                </table>
+            </td>
+
+            <td width="10%"></td>
+
+        </tr>
+
+        <tr>
+            <!-- Quixaba --->
+            <td width="10%"></td>
+
+            <td>
+                <table background="../assets/quixaba_escuro.jpg" width="100%">
+                    <!-- imagem e descrição -->
+                    <td width="50%">
+                        <div align="center" height="400">
+                            <h2><font color="#FFFFFF" face="Georgia">Quixaba</font></h2>
+                            <p><font color="#FFFFFF" face="Verdana">A praia de Quixaba fica localizada no município de Aracati-CE<br>
+                            a cerca de 15km do centro da cidade. Divide as atenções no município<br>
+                            com as praias de Canoa Quebrada e Majorlândia.</font></p>
+                        </div>
+                    </td>
+                    <!-- mapa -->
+                    <td width="50%">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6688.711356360444!2d-37.66091527830042!3d-4.570371001397141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9b573a12d7225%3A0xe8f9bf0198579491!2sQuixab%C3%A1%2C%20Aracati%20-%20CE!5e0!3m2!1spt-BR!2sbr!4v1754714140971!5m2!1spt-BR!2sbr" width="70%" height="300" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </td>
+                </table>
+            </td>
+
+            <td width="10%"></td>
+            
+        </tr>
+    </table>
+
+    
+    
+    
+    
     <div>
         <h2>Centro histórico de Aracati</h2>
     </div>
